@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ULTRA WATCH PRO — A união definitiva de tecnologia aeroespacial e design de alta performance. Redefinindo o monitoramento de saúde, conectividade e estilo." />
+    <title>ULTRA WATCH PRO | A Maestria do Tempo</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Hanken+Grotesk:wght@100..900&family=JetBrains+Mono:wght@100..800&display=swap" rel="stylesheet" />
+    
+    <!-- Google Material Symbols Outlined -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    
+    <!-- Configuração Customizada do Tailwind CSS -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-secondary": "#00363a",
+                        "on-error": "#690005",
+                        "on-background": "#e5e2e1",
+                        "secondary-fixed-dim": "#00dbe7",
+                        "surface-container": "#201f1f",
+                        "outline-variant": "#414754",
+                        "on-tertiary-container": "#5b0015",
+                        "surface-dim": "#131313",
+                        "surface-tint": "#adc7ff",
+                        "on-primary-fixed": "#001a41",
+                        "primary-fixed-dim": "#adc7ff",
+                        "primary-fixed": "#d8e2ff",
+                        "on-surface-variant": "#c1c6d7",
+                        "error": "#ffb4ab",
+                        "outline": "#8b90a0",
+                        "on-tertiary-fixed": "#40000c",
+                        "on-secondary-fixed": "#002022",
+                        "surface-container-low": "#1c1b1b",
+                        "on-tertiary": "#680019",
+                        "tertiary-fixed-dim": "#ffb3b5",
+                        "surface-bright": "#393939",
+                        "surface-container-high": "#2a2a2a",
+                        "background": "#131313",
+                        "secondary-container": "#00f1fe",
+                        "primary-container": "#4a8eff",
+                        "on-tertiary-fixed-variant": "#920027",
+                        "inverse-primary": "#005bc0",
+                        "primary": "#adc7ff",
+                        "on-primary-fixed-variant": "#004493",
+                        "tertiary": "#ffb3b5",
+                        "error-container": "#93000a",
+                        "inverse-surface": "#e5e2e1",
+                        "surface-container-highest": "#353534",
+                        "on-secondary-fixed-variant": "#004f54",
+                        "on-secondary-container": "#006a70",
+                        "tertiary-container": "#ff5167",
+                        "secondary": "#ddfcff",
+                        "inverse-on-surface": "#313030",
+                        "tertiary-fixed": "#ffdada",
+                        "on-primary": "#002e68",
+                        "surface-variant": "#353534",
+                        "surface": "#131313",
+                        "secondary-fixed": "#74f5ff",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-container": "#00285b",
+                        "on-surface": "#e5e2e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "touch_target_min": "44px",
+                        "stack_gap": "8px",
+                        "item_padding": "16px",
+                        "edge_margin": "12px"
+                    },
+                    "fontFamily": {
+                        "display-time": ["Sora"],
+                        "label-data": ["JetBrains Mono"],
+                        "headline-lg": ["Sora"],
+                        "headline-md": ["Sora"],
+                        "body-sm": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "display-time": ["48px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "label-data": ["12px", {"lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg": ["24px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "headline-md": ["20px", {"lineHeight": "24px", "fontWeight": "500"}],
+                        "body-sm": ["14px", {"lineHeight": "18px", "fontWeight": "400"}],
+                        "body-lg": ["16px", {"lineHeight": "22px", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Link para Folha de Estilos Externa Refatorada -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-background text-on-background font-body-lg antialiased">
+    
+    <!-- Cabeçalho de Navegação Principal -->
+    <header class="bg-background/80 backdrop-blur-lg top-0 sticky z-50 border-b border-outline-variant/30 shadow-md">
+        <nav class="flex justify-between items-center w-full px-edge_margin py-4 max-w-7xl mx-auto" aria-label="Menu principal">
+            <a href="#hero" class="font-headline-lg text-headline-lg font-black tracking-tighter text-primary">
+                ULTRA WATCH PRO
+            </a>
+            
+            <!-- Links da barra de navegação no Desktop -->
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-semibold" href="#recursos">Recursos</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-semibold" href="#esportes">Esportes</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-semibold" href="#estilo">Personalização</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-semibold" href="#oferta">Avaliações</a>
+                <a href="#oferta" class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:opacity-90 transition-transform active:scale-95 text-center text-sm">
+                    Compre Agora
+                </a>
+            </div>
+            
+            <!-- Botão Menu Mobile (Acessibilidade) -->
+            <button class="md:hidden text-primary flex items-center p-2" aria-label="Abrir menu de navegação">
+                <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal do Site -->
+    <main class="space-y-16 pb-24 overflow-x-hidden">
+        
+        <!-- Hero Section -->
+        <section class="safe-zone pt-12 flex flex-col items-center text-center" id="hero" aria-labelledby="hero-heading">
+            <h1 class="font-headline-lg text-[40px] leading-[1.1] mb-4 font-extrabold tracking-tight" id="hero-heading">
+                ULTRA WATCH PRO.<br />A Maestria do Tempo.
+            </h1>
+            <p class="text-on-surface-variant max-w-md mx-auto font-body-lg mb-10 opacity-80">
+                Design aeroespacial. Monitoramento vital de precisão. Conectividade ininterrupta. Redefinindo o que um relógio pode fazer.
+            </p>
+            <div class="relative w-full max-w-md aspect-square flex justify-center items-center">
+                <div class="absolute inset-0 bg-primary/10 blur-[100px] rounded-full" aria-hidden="true"></div>
+                <div class="animate-float w-full h-full relative z-10">
+                    <img alt="Display do ULTRA WATCH PRO" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT5MzNchWeFKaMz1gKmSafB3jkuSlTWYmfXNhAyKtZG-dw_79Kzbdsc6DIwX7jz5gZFdCKQyiOZ0GOiSvbWPWMlxCNSxf_Kdijve5wywgvfF4Hhm6EYEjxTEpXIe3QY8j9P9bQdigNnRfUjazXXIaSVDyoU0UNftIJSPD9je_q3BGwqHLkEnmtmq8gcVcO1ktFY_RJP9ejfRM0U302lmc2VvddKNI4Ug2GgOVx9Be8Gmgxc3OJppa84TNoMFgQUbaSUwVoXt_SZa8" fetchpriority="high" />
+                </div>
+            </div>
+        </section>
+        
+        <!-- Forjado para Resistir (Esportes) -->
+        <section class="safe-zone" id="esportes" aria-labelledby="esportes-heading">
+            <div class="glass-card rounded-xl overflow-hidden p-0 shadow-lg">
+                <div class="relative h-80">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAioKLghuTOJ9enwNuDllGih87vLF-KVtnOijnfQbOCJe985rPYN_vWcSCzL2Lt5DFKfJyQy7I9uzV628l2ckVRI3xhwxIHwaR6d8UFLW24t_QZs_a9PX9KTiWlecT2JoSsoFqyQX3Zg6kh_6fZ_NWGwG7Q-0rV20rEdfRt7zn8_-mTHWDPxXcxThZbj61WJIjA4IjFxuOSauxS271mdt8w9LG0GcyFRHlZiox5pH5FsJyIAIjLBEGO9LSIcSgfhMIbxfODGh730ys" alt="Atleta correndo em trilha de montanha ao pôr do sol usando o Ultra Watch Pro" loading="lazy" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" aria-hidden="true"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-label-data font-label-data uppercase tracking-widest mb-2 inline-block">
+                            Performance
+                        </span>
+                        <h2 class="font-headline-md text-headline-md font-bold" id="esportes-heading">
+                            Forjado para Resistir
+                        </h2>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="p-3 bg-surface-container rounded-lg" aria-hidden="true">
+                            <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">exercise</span>
+                        </div>
+                        <div>
+                            <h3 class="font-headline-md text-headline-md text-primary font-semibold">+100 Modos Esportivos</h3>
+                            <p class="text-body-sm text-on-surface-variant">Do triatlo à yoga, métricas precisas para cada movimento.</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="bg-surface-container-low p-4 rounded-lg flex flex-col gap-1">
+                            <span class="text-label-data text-on-surface-variant uppercase">Resistência</span>
+                            <span class="font-headline-md text-headline-md font-bold text-secondary">5ATM</span>
+                        </div>
+                        <div class="bg-surface-container-low p-4 rounded-lg flex flex-col gap-1">
+                            <span class="text-label-data text-on-surface-variant uppercase">Autonomia</span>
+                            <span class="font-headline-md text-headline-md font-bold text-secondary">15 Dias</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Conectividade (Sempre Conectado) -->
+        <section class="safe-zone" id="recursos" aria-labelledby="recursos-heading">
+            <div class="flex flex-col gap-6">
+                <div class="text-center">
+                    <h2 class="font-headline-lg text-headline-lg font-bold mb-2" id="recursos-heading">
+                        Sempre Conectado
+                    </h2>
+                    <p class="text-on-surface-variant font-body-sm">Sua vida digital, agora no seu pulso.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    
+                    <!-- Card de Chamadas -->
+                    <div class="glass-card rounded-xl p-6 flex flex-col justify-between h-64 overflow-hidden relative shadow-md">
+                        <div class="z-10">
+                            <span class="material-symbols-outlined text-primary mb-4" style="font-size: 32px;" aria-hidden="true">call</span>
+                            <h3 class="font-headline-md text-headline-md font-bold mb-2">Chamadas Bluetooth</h3>
+                            <p class="text-body-sm text-on-surface-variant">Atenda e realize chamadas com clareza cristalina sem tocar no celular.</p>
+                        </div>
+                        <img class="absolute -right-10 -bottom-10 w-48 h-48 opacity-40 object-contain pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZRA0LCtbCIA-WQiTHOF9i1Pnxhx25sT_pmNho86ySke45drl9bJLNHuSIupkwg2KM-Lx3UY1B5EuubLMZWqX8JwaeBS5v9HbhRHNk4nUMPO9Qp_LGa87yc8uAtOA97YuMsqlVlVHwGnGpayGHyApu8SgQ3QfVUmARPDRLE-uyHiX7V5ii_2fr1GtILSYNl0Zgb1eH1GvAOXhwiHX61BnOXyKSAqWs4ctGilFNdbimfoR7gbHtNxKJ9mERNuvDVPMN5DOTCP7_wBc" alt="Interface de chamada telefônica no Ultra Watch Pro" loading="lazy" />
+                    </div>
+                    
+                    <!-- Card de Assistente de Voz -->
+                    <div class="glass-card rounded-xl p-6 flex flex-col justify-between h-64 overflow-hidden relative shadow-md">
+                        <div class="z-10">
+                            <span class="material-symbols-outlined text-tertiary mb-4" style="font-size: 32px;" aria-hidden="true">keyboard_voice</span>
+                            <h3 class="font-headline-md text-headline-md font-bold mb-2">Assistente de Voz AI</h3>
+                            <p class="text-body-sm text-on-surface-variant">Controle sua agenda e dispositivos inteligentes apenas com a sua voz.</p>
+                        </div>
+                        <img class="absolute -right-10 -bottom-10 w-48 h-48 opacity-40 object-contain pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmXkVF3JuYnTL0VdafIyzAPr3YYsjQGU0hzQY9AJ2og9Xf7JIW6o_f2irbJeeQ2gCPnufNRvoKKIVvgFOZ5DsTYPOWL4Wbtengt2AgzX-HLRBH0zWHPMhjFQb65ElEKYennrDHOV6RobPSeYc-BGA7jJos33zdI14k834r0aL2_gdsosxBcPUaiMcCtkKRwyyEByqWnTfn-NcgGl-zUMcEuR1twx3aY94vpFU363rRAWOh2zAb7JGx41gNELsXBJAb3e0hGLl7gAU" alt="Representação visual do assistente de voz com ondas de áudio neon" loading="lazy" />
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- Saúde e Bem-Estar (Próximo Nível) -->
+        <section class="safe-zone" id="saude" aria-labelledby="saude-heading">
+            <div class="glass-card rounded-xl overflow-hidden flex flex-col md:flex-row items-center shadow-lg">
+                <div class="w-full md:w-1/2 p-8 order-2 md:order-1">
+                    <h2 class="font-headline-lg text-headline-lg font-bold mb-4" id="saude-heading">
+                        Próximo Nível do seu Bem-Estar
+                    </h2>
+                    <p class="text-on-surface-variant font-body-lg mb-6 opacity-90 leading-relaxed">
+                        Sensores de bio-precisão que monitoram seu coração, sono e oxigênio 24/7. Notificações inteligentes que alertam sobre qualquer irregularidade.
+                    </p>
+                    <div class="space-y-4" role="list">
+                        <div class="flex items-center gap-3" role="listitem">
+                            <div class="w-2 h-2 rounded-full bg-error glow-metric" aria-hidden="true"></div>
+                            <span class="text-body-sm font-medium text-on-background">Oxímetro de Precisão (SpO2)</span>
+                        </div>
+                        <div class="flex items-center gap-3" role="listitem">
+                            <div class="w-2 h-2 rounded-full bg-secondary glow-metric" aria-hidden="true"></div>
+                            <span class="text-body-sm font-medium text-on-background">Monitor de Sono Avançado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 h-80 order-1 md:order-2">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASAKPkvx2siHX9pkpRGXW6NHiwKu39h1j4SzRd_HClHY4J4-Mdex-7QcNbSf6mG97ap4JpQmYU1q0x4FIobBp33HGQHcQgIsJc_-PqBCps8wDwElUk3wKdzEnWL4L21qq9clwkc0zSrYgPBazQlDM5zKwGUpBKupLloS_ivGykCnDzHwPnIY4z8Hxvs3wWt0H0bcqEgYs9-mrfiFK4_qdgjSsz8XtQMiZ4m1-1cIu83d50uQHwU_f7fBR9IU6G5l2HDWvHaxYAd-U" alt="Fundo técnico mostrando os sensores ópticos do Ultra Watch Pro emissores de luz bio-violeta" loading="lazy" />
+                </div>
+            </div>
+        </section>
+        
+        <!-- Estilo de Vida / Exclusividade -->
+        <section class="safe-zone text-center" id="estilo" aria-labelledby="estilo-heading">
+            <h2 class="font-headline-lg text-headline-lg font-bold mb-12" id="estilo-heading">
+                Exclusividade em cada detalhe
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 details-grid">
+                
+                <div class="aspect-square glass-card rounded-xl overflow-hidden group shadow-md">
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFRqwkOlsKhB_XJjA1JT8xHRWVJSYRPQ-CvleCFOiunDrDmS24sdjn_YuXSW-xqWMwzT1Y16w9dbJpXou87IsWrhQstxmhd873RoJAWJ10IgJUuCv6jsqmF2UpP1hDdNApyesnt6gB2F3ws8VcK_Ll9GEOVx39oXbrbppdA2YooCleEQPn3wVFA8nuQMStwRVS5CXR4KezF7tsMFzO6tLA30AaQ2E2vlO9lAlaofBs02pIrwl8kMbKeQncHhVpjwC92rmJw6U6dvc" alt="Detalhe aproximado da pulseira milanesa de aço inoxidável do relógio" loading="lazy" />
+                </div>
+                
+                <div class="aspect-square glass-card rounded-xl overflow-hidden group shadow-md">
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPl8ScePGlMbBUHPVL6_fgK8V6m6wWGHob4i0Omss7_8praVBE7dQTVEy4dQG-zNSoBR1sTgRC1lYwYfJlXzVRACa8RMeQ76KnkEwSm2bPszhZwJmZaH7dP_ufRS7pAZKkTLwCJtfxI0go9EloqY8sXBXOhzWUUqTvkfNQ9bSEbfdBcEgNskyiawimy6jskGiZjrZ5-ZhcOXuoypMgAjuQnUXXKo_8VB3X-P1Q7v05WDUtmfhiRT6VINYDNlZgQR0rAzuqiz85zzA" alt="Profissional de negócios de terno usando o Ultra Watch Pro em uma sala de reuniões" loading="lazy" />
+                </div>
+                
+                <div class="aspect-square glass-card rounded-xl overflow-hidden group shadow-md">
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlys0Fl5ooh_bc1hJLgLhSg9BMfV8wbvwa5-5Xigg_BkTjhoFcDSe7ETdCXy4Ue7R4VgA_xQIIjc9g9_j1jlPNTfavnY_t3jLiME1WLUjjArSQI3MpKeqWq29wOyHM3zZYyfyNoTgjdHkMJTTfr-_CGpR-3QgjWBfT2VdCP8BIRqhwpUYbqc1zvR4sESF-JXsQYOZM5vAKN3Ih5t2-YAeUdVJF_ZOEjBvrc2lrbYMA2-8s78OTp22S_y2aOPDlMYATvPBKKEO8-p4" alt="Mostrador circular do relógio exibindo design limpo e ponteiros em tom ciano" loading="lazy" />
+                </div>
+                
+                <div class="aspect-square glass-card rounded-xl overflow-hidden group shadow-md">
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATuO4FaGyiEz7lMvZ3oo7j-vC-ijDiG-BkkzVss97yN1metW2RZQYi5BhSzLkI99EiIX_9swDMPwOgDfp1yGUXB9LDoE4VmaRkwFRceupoGC8z8x0aQpk4cX5nPAi1Y3_zm1iqF1gO4yGp4q6rQf_KANGFzlQJA__ALrCS0w1GOELlbJeB2zcvzxXm3vwj5NTz0ZOWNpdncRjeszQ4n6qjS0XTj9E9pDq8WqQYxtIIYaF2XALCZ2m8OaKm7qy7r0x8vQ9qpDPGSvw" alt="Detalhe lateral da coroa giratória recartilhada metálica do relógio" loading="lazy" />
+                </div>
+                
+            </div>
+        </section>
+        
+        <!-- Personalização (Sua cara. Seu estilo.) -->
+        <section class="safe-zone" id="personalizacao" aria-labelledby="personalizacao-heading">
+            <div class="bg-surface-container-high rounded-xl p-8 flex flex-col md:flex-row items-center gap-8 relative overflow-hidden shadow-lg">
+                <div class="absolute -right-20 -top-20 w-64 h-64 bg-primary/20 blur-[80px] rounded-full" aria-hidden="true"></div>
+                <div class="w-full md:w-1/2 z-10">
+                    <h2 class="font-headline-lg text-headline-lg font-bold mb-4" id="personalizacao-heading">
+                        Sua cara. Seu estilo.
+                    </h2>
+                    <p class="text-on-surface-variant font-body-lg mb-8 opacity-80">
+                        Centenas de mostradores exclusivos para você escolher. Personalize cada detalhe e faça do Ultra Watch Pro uma extensão da sua personalidade.
+                    </p>
+                    <button class="border-2 border-primary text-primary px-8 py-3 rounded-full font-bold hover:bg-primary/10 transition-colors">
+                        Ver Galeria
+                    </button>
+                </div>
+                <div class="w-full md:w-1/2 z-10 flex justify-center">
+                    <div class="relative w-64 h-64">
+                        <img alt="Galeria com variadas opções de mostradores" class="w-full h-full object-contain drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQcB1uRIGVhJsJav3R7C-J050TIQGzu_1h1OFpw90YkdctN2xto2vdJBGeq_mV53wNQhl_teVpHNU1it8Of6Me5GyV2IYYaSw6RUtTCMPQG6SljixvYH7qs3lrDKCAvnDlZIjViMGYQCfIjRyMyQlHnYXY67Nobte_Q-GaeYBhgqnqrVPMU_Jcw5jqBjijc0zV6nfVgpJKbNlH-JmrZgjwyB--ZP7fNf_MG72B09n-YcCTK9cdm1Hx8LKbdFoeIIalYGY-vQC-1gQ" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Oferta Irresistível -->
+        <section class="safe-zone" id="oferta" aria-labelledby="oferta-heading">
+            <div class="glass-card rounded-xl p-10 text-center border-2 border-primary/30 relative overflow-hidden shadow-2xl">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" aria-hidden="true"></div>
+                <div class="relative z-10">
+                    
+                    <!-- Estrelas de Avaliação -->
+                    <div class="flex justify-center gap-1 mb-4" aria-label="Classificação de 5 estrelas">
+                        <span class="material-symbols-outlined text-yellow-400" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+                        <span class="material-symbols-outlined text-yellow-400" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+                        <span class="material-symbols-outlined text-yellow-400" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+                        <span class="material-symbols-outlined text-yellow-400" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+                        <span class="material-symbols-outlined text-yellow-400" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+                    </div>
+                    
+                    <h2 class="font-headline-lg text-headline-lg font-extrabold mb-2 uppercase tracking-tighter" id="oferta-heading">
+                        Adquira a maestria.
+                    </h2>
+                    <p class="text-on-surface-variant font-body-sm mb-8">Oferta por tempo limitado • Frete Grátis para todo Brasil</p>
+                    
+                    <div class="flex flex-col items-center gap-2 mb-10">
+                        <span class="text-on-surface-variant line-through font-label-data text-body-sm">De R$ 289,00</span>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-headline-md font-bold text-primary">R$</span>
+                            <span class="text-display-time font-display-time text-primary">187,00</span>
+                        </div>
+                        <span class="bg-primary text-on-primary px-4 py-1 rounded-full text-label-data font-bold uppercase tracking-widest mt-2 animate-bounce inline-block">
+                            Preço Especial
+                        </span>
+                    </div>
+                    
+                    <button class="w-full max-w-sm bg-primary text-on-primary py-5 rounded-full text-headline-md font-bold shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all">
+                        Comprar Agora
+                    </button>
+                    
+                    <div class="flex justify-center gap-6 mt-8 text-body-sm text-on-surface-variant opacity-60">
+                        <div class="flex items-center gap-1">
+                            <span class="material-symbols-outlined" style="font-size: 16px;" aria-hidden="true">verified_user</span>
+                            Compra Segura
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <span class="material-symbols-outlined" style="font-size: 16px;" aria-hidden="true">local_shipping</span>
+                            Envio Imediato
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- Rodapé Semântico -->
+    <footer class="bg-surface-container-lowest border-t border-outline-variant full-width rounded-t-lg">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-stack_gap px-edge_margin py-12 max-w-7xl mx-auto">
+            <div class="col-span-1 md:col-span-2">
+                <span class="font-headline-md text-headline-md font-bold text-on-surface mb-4 block">ULTRA WATCH PRO</span>
+                <p class="text-on-surface-variant text-body-sm max-w-xs mb-8">Elevando sua performance e estilo com tecnologia de elite e design inconfundível.</p>
+                <p class="text-on-surface-variant font-body-sm">© 2026 ULTRA WATCH PRO. Todos os direitos reservados.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-primary mb-4">Produto</h4>
+                <ul class="space-y-2 font-body-sm text-on-surface-variant">
+                    <li><a class="hover:text-primary underline underline-offset-4" href="#recursos">Recursos</a></li>
+                    <li><a class="hover:text-primary underline underline-offset-4" href="#saude">Especificações</a></li>
+                    <li><a class="hover:text-primary underline underline-offset-4" href="#esportes">Esportes</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-primary mb-4">Legal</h4>
+                <ul class="space-y-2 font-body-sm text-on-surface-variant">
+                    <li><a class="hover:text-primary underline underline-offset-4" href="#">Privacidade</a></li>
+                    <li><a class="hover:text-primary underline underline-offset-4" href="#">Termos</a></li>
+                    <li><a class="hover:text-primary underline underline-offset-4" href="#">Suporte Técnico</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Barra de Ação Rápida Mobile -->
+    <nav class="fixed bottom-0 left-0 w-full flex justify-center pb-safe px-4 bg-surface-container-high/90 backdrop-blur-xl md:hidden z-50 shadow-[0_-4px_10px_rgba(0,0,0,0.5)]" aria-label="Compra rápida mobile">
+        <button id="mobile-buy-btn" class="flex items-center justify-center bg-primary-container text-on-primary-container rounded-full w-full py-3 mx-4 my-2 font-bold hover:brightness-110 active:scale-95 transition-all">
+            <span class="material-symbols-outlined mr-2" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">shopping_cart</span>
+            Comprar Agora
+        </button>
+    </nav>
+
+    <!-- Bibliotecas GSAP e ScrollTrigger via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Script de Lógica e Animações Externas -->
+    <script src="main.js" defer></script>
+</body>
+</html>
